@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+Author:  Vince Oveson
+CS4540, PS1, Spring 2014
+-->
+<html>
+    <head>
+        <meta charset="ISO-8859-1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Minesweeper Help</title>
+    </head>
+
+    <body>
+        <h1>How to play Minesweeper:</h1>
+        <UL>
+            <li>To begin the game, click on any cell.</li>
+            <li>Once the game has begun, the timer will start counting up to keep track of how long the game lasts.</li>
+            <li>The numbers that are displayed indicate the number of mines that are adjacent to that square.</li>
+            <li>You can flag a square you believe is covering a mine by right-clicking on that square. If you wish
+            to remove a flag you have placed, just right-click the square again.
+            </li>
+            <li>The black box on the left-hand side will keep track of how many mines you have left to flag.</li>
+            <li>Evaluate the numbers and click on other squares.</li>
+            <li>If at any point during the game you click on a square covering a mine, the game will end.</li>
+            <li>If you successfully uncover all the safe squares without hitting a mine, you win!</li>
+        </UL>
+        <p>
+
+        <h1>Implementation details:</h1>
+        This game turned out to be much more difficult to implement that I originally thought. The most difficult part was the
+        "cascade" algorithm. I found a description of the algorithm <a href="http://www.techuser.net/minecascade.html">here</a>, which was
+        particularly helpful. The algorithm checks the neighbors of the clicked cell, counting the number of mines. If that number is zero,
+        it iteratively checks the neighbors of each of those cells. If the number is not zero, it displays the count in that cell.
+        <p>
+        I created several custom images to be used in the game (the number squares, face button, etc.) I also used some
+        free-licensed images which are acknowledged on the main game page. This project taught me a lot about HTML, JavaScript, and CSS. I had to
+        use each of these extensively in order to make this game work and look like I wanted it to.
+
+        <p>
+        <<<a href="index.html">Back</a>
+    </body>
+</html>

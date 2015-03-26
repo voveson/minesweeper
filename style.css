@@ -1,0 +1,138 @@
+@CHARSET "ISO-8859-1";
+/* Author:  Vince Oveson
+ * For CS4540, Spring 2014
+ * PS1
+ *
+ * This file contains all of the styling for the minesweeper game 
+ * written for PS1.
+ */
+
+/*
+ * Style applied to H1 elements on both help.html and index.html pages.
+ * Used to set apart the headings and create a consistent look throughout
+ * the website.
+ */
+h1
+{
+    color: darkred;
+}
+
+/*
+ * The game class is used to center the content on index.html to make the page
+ * more aesthetically pleasing.
+ */
+.game
+{
+    text-align: center;
+    align-content: center;
+}
+
+/*
+ * Styles applied to the sub-heading of index.html
+ */
+.description
+{
+    font-size: 30px;
+    color: darkred;
+}
+
+/*
+ * The gameboard class defines the style elements that give the gameboard
+ * its 3D appearance.
+ */
+.gameboard table
+{
+    border: 8px;
+    border-style: ridge;
+    background-color: #BDBDBD;
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+ * These style choices are applied to the clock and counter to give them more
+ * of a digital clock appearance and to set them apart from the rest of the
+ * game board.
+ */
+.dashboard
+{
+    border-style: Inset;
+    background-color: BLACK;
+    padding: 10px;
+    Text-Align: Center;
+    font-size: 38px;
+    font-family: Lucida Console;
+    color: RED;
+    WIDTH: 40PX;
+    HEIGHT: 40PX;
+}
+
+/*
+ * The divider element is a table row that separates the gameboard dash board
+ * from the cells of the game.  These style properties give the divider a 
+ * 3D ridge appearance.
+ */
+#divider
+{
+    border-bottom: 8px;
+    border-bottom-style: ridge;
+    height: 10px;
+}
+
+/*
+ * These style properties are applied to the table cell containing the 
+ * reset (smiley-face) button.
+ */
+#Reset
+{
+    color: #BDBDBD;
+    background-color: transparent;
+    border-style: outset;
+    border: 8px;
+    height: 45px;
+    width: 90px;
+}
+
+/*
+ * These style properties are applied to all squares that are still covered
+ * and helps distinguish them from cells that have been revealed.  These 
+ * properties are also applied to the reset button.
+ */
+.covered, .reset
+{
+    border-style: OUTSET;
+    TEXT-ALIGN: CENTER;
+    overflow: hidden;
+    width: 45px;
+    HEIGHT: 45PX;
+}
+
+/*
+ * These style properties are applied to cells which have been revealed (clicked)
+ * by the player.  This removes the 3D appearance and gives them a more flattened
+ * look.
+ */
+.uncovered
+{
+    border: solid 1px;
+    border-color: #BFBFBF;
+    background-color: #CCCCCC;
+    TEXT-ALIGN: CENTER;
+    width: 45px;
+    HEIGHT: 45PX;
+}
+
+/*
+ * This style will be applied to a cell containing a bomb if that cell is clicked by
+ * the player.  This helps the player keep track of which cell caused the chain reaction
+ * that set off the other bombs.
+ */
+.triggerBomb
+{
+    border: solid 1px;
+    border-color: #BFBFBF;
+    background-color: #FF0000;
+    TEXT-ALIGN: CENTER;
+    width: 45px;
+}
